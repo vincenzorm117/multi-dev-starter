@@ -2,3 +2,4 @@
 .vscode
 lambdas/*.zip
 lambdas/*/node_modules
+lambdas/cloudfront_edge/config.json
