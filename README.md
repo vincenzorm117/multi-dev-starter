@@ -1,7 +1,10 @@
-# multi-dev-starter
+# Multi Dev Starter
+A starter repo for anybody making a multi dev environment of static sites. This starter enables you to make changes on a new branch, push those changes and have a new static site environment with its own subdomain.
 
-A starter repo for anybody making a multi dev environment for static sites.
-
+## Example
+- Domain: `example.com`
+- Github Branch: `mybranch`
+- Resulting Environment: `https://mybranch.example.com`
 
 # Requirements
 
