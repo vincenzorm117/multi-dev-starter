@@ -9,23 +9,19 @@ export default function Home() {
         <meta name="build-version" content={`v${Date.now()}`} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
+        <img src="/micahelscott.gif" />
         <h1 className="title">
-        👋 Hello, <span className="highlight">there</span>!
+        It worked! 
         </h1>
-
-        <p className="description">
-          Version: {(new Date()).toString()}
-        </p>
-
-
       </main>
 
 
       <style jsx>{`
-        .highlight {
-          color: red;  
+
+        h1 {
+          color: #fff;  
+          font-family: Helvetica, arial, sans-serif;
         }
         
         .container {
@@ -44,6 +40,22 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          position: relative;
+          z-index: 2;
+        }
+
+        .container:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: 2;
+          background: url(/butterysmooth.webp) no-repeat center center;
+          background-size: cover;
+          width: 100%;
+          filter: blur(5px);
         }
 
         footer {
